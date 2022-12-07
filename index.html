@@ -2,36 +2,101 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <title>title</title>
+    <title>painty portfolio</title>
     <style>
-      body {
-        background: url(colormush.gif);
-        background-repeat: no-repeat;
-        background-size: 100%, 100%;
-        display: flex;
-        justify-content: center;
-        align-items: top;
+      * {
+        box-sizing: border-box;
       }
-      
-      .title {
+
+      body {
+        /*         margin-left: 40px;
+        margin-right: 40px; */
+        background: url(colormush.gif);
+        /*         background-repeat: repeat-y; */
+        background-size: cover;
+        /*         display: flex; */
+        /*         text-align: center; */
+        /*         justify-content: center; */
+        /*         align-items: top; */
+        cursor: url(‘icon-rabbit.png’), auto;
+      }
+
+      h1 {
+        /*      text-align: center;
         font-size: 40px;
         font-family: "Andale Mono";
         font-weight: 100;
+        letter-spacing: 5px;
+        background-color: white; */
+        /*      margin: auto auto; */
+      }
+
+      img {
+        width: 300px;
+      }
+
+
+      .title {
+        text-align: center;
+        color: gray;
+        font-size: 25px;
+        font-family: "Andale Mono";
+        font-weight: 100;
+        letter-spacing: 5px;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0px;
+        font-family: "Andale Mono";
+      }
+
+      .gallery>div {
+        padding: 20px;
+        /*         background-color: rgba(255, 255, 255, 0.6); */
+        /*         border-collapse: collapse;
+        top: 200px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 200px; */
+
+      }
+
+      @media (max-width: 480px) {
+        .gallery {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 320px) {
+        .gallery {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </head>
+
+
   <body>
     <div class="title">
-      skylar's world!!
-<!--       <img src="colormush.gif" alt="blue-green gradient by colormush"> -->
+      <h1>painty portfolio</h1>
     </div>
-    <div>
-      <table>
-        <tr>
-          <td></td>
-        
-        </tr>
-      </table>
-    </div>
+
+    <section class="gallery">
+      <div><img src="untitled.jpg" alt="untitled"><br>
+        untitled<br>2021<br>oil on canvas<br>11"x14"</div>
+      <div><img src="red_thread.jpg" alt="red thread"><br>
+        red thread<br>2020<br>oil and acrylic on canvas<br>20"x26"</div>
+      <div><img src="chinoiserie_i.jpg" alt="chinoiserie i"><br>
+        chinoiserie i<br>2020<br>oil on canvas<br>24"x48"</div>
+      <div><img src="chinoiserie_ii.jpg" alt="chinoiserie ii"><br>
+        chinoiserie ii<br>2020<br>oil on canvas<br>24"x48"</div>
+      <div><img src="bletilla.jpg" alt="bletilla"><br>
+        bletilla ochracea<br>2021<br>oil and acrylic on canvas<br>24"x30"</div>
+      <div><img src="jaded.jpg" alt="jaded"><br>
+        jaded<br>2019<br>mixed media<br>30"x40"</div>
+    </section>
   </body>
 </html>
